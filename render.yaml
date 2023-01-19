@@ -4,9 +4,11 @@ services:
 - type: web
   autoDeploy: true
   plan: starter
-  repo: https://github.com/mmaddex/simple-sinatra
+  ##initialDeployHook: ./dephook.sh
+  ##previewPlan: free
   name: simple-sinatra-blueprint
   env: ruby
+  healthCheckPath: /api/utility/health
   rootDir: sin
   buildCommand: ./build.sh
   startCommand: ./run.sh
