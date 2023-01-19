@@ -4,7 +4,7 @@ services:
 - type: web
   autoDeploy: true
   plan: starter
-  repo: https://github.com/Mmaddex/simple-sinatra.git
+  repo: https://github.com/mmaddex/simple-sinatra.git
   name: simple-sinatra-blueprint
   env: ruby
   rootDir: sin
