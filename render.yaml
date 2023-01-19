@@ -1,0 +1,18 @@
+previewsEnabled: true
+previewsExpireAfterDays: 2
+services:
+- type: web
+  autoDeploy: true
+  plan: starter
+  repo: https://github.com/Mmaddex/simple-sinatra.git
+  name: simple-sinatra-blueprint
+  env: ruby
+  healthCheckPath: /api/utility/health
+  rootDir: sin
+  envVars:
+  - key: PORT
+    value: 9292
+  - key: test_env
+    sync: false
+  buildCommand: ./build.sh
+  startCommand: ./run.sh
