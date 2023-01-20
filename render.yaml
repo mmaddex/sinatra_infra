@@ -1,5 +1,5 @@
 previewsEnabled: true
-previewsExpireAfterDays: 2
+previewsExpireAfterDays: 1
 services:
 - type: web
   repo: https://github.com/mmaddex/simple-sinatra.git
