@@ -1,5 +1,3 @@
-previewsEnabled: true
-previewsExpireAfterDays: 1
 services:
 - type: web
   repo: https://github.com/mmaddex/simple-sinatra.git
@@ -8,8 +6,18 @@ services:
   plan: starter
   ##initialDeployHook: ./dephook.sh
   ##previewPlan: free
-  name: simple-sinatra-blueprint-separatae
+  name: simple-sinatra
   env: ruby
-  healthCheckPath: /api/utility/health
+  healthCheckPath: /health
   buildCommand: ./build.sh
   startCommand: ./run.sh
+  domains:
+    - www.frank.mattmaddex.com
+- type: static
+  repo: https://gitlab.com/mmaddex1/jekyll/tree/master.git
+  autoDeploy: true
+  name: static
+  buildCommand: ./build.sh
+  publishDirectory: _site
+  domains: 
+    - static.mattmaddex.com
