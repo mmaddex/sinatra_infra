@@ -15,7 +15,7 @@ services:
     - www.frank.mattmaddex.com
 - type: web
   env: static
-  repo: https://gitlab.com/mmaddex1/jekyll/tree/master.git
+  repo: https://gitlab.com/mmaddex1/jekyll.git
   autoDeploy: true
   name: static
   buildCommand: ./build.sh
