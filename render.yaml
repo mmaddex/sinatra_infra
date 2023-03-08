@@ -13,7 +13,8 @@ services:
   startCommand: ./run.sh
   domains:
     - www.frank.mattmaddex.com
-- type: static
+- type: web
+  env: static
   repo: https://gitlab.com/mmaddex1/jekyll/tree/master.git
   autoDeploy: true
   name: static
