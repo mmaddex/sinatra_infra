@@ -5,7 +5,6 @@ services:
   autoDeploy: true
   plan: starter
   ##initialDeployHook: ./dephook.sh
-  previewPlan: free
   pullRequestPreviewsEnabled: true 
   name: simple-sinatra
   env: ruby
