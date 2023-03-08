@@ -19,6 +19,6 @@ services:
   autoDeploy: true
   name: static
   buildCommand: ./build.sh
-  publishDirectory: _site
+  staticPublishPath: _site
   domains: 
     - static.mattmaddex.com
