@@ -5,7 +5,7 @@ services:
   autoDeploy: true
   plan: starter
   ##initialDeployHook: ./dephook.sh
-  pullRequestPreviewsEnabled: true 
+  ##pullRequestPreviewsEnabled: true 
   name: simple-sinatra
   env: ruby
   healthCheckPath: /health
