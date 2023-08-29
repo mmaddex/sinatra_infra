@@ -7,7 +7,7 @@ services:
   region: ohio
   ##plan: starter plus
   initialDeployHook: ./dephook.sh
-  name: simple-sinatra-oh
+  name: simple-sinatra-oh-infra
   env: ruby
   healthCheckPath: /health
   buildCommand: ./build.sh
