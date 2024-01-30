@@ -1,4 +1,4 @@
-enablePreviews: true
+previewsEnabled: true
 services:
 - type: web
   repo: https://github.com/mmaddex/simple-sinatra.git
