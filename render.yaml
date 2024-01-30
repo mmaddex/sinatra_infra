@@ -1,3 +1,4 @@
+enablePreviews: true
 services:
 - type: web
   repo: https://github.com/mmaddex/simple-sinatra.git
@@ -11,14 +12,14 @@ services:
   healthCheckPath: /health
   buildCommand: ./build.sh
   startCommand: ./run.sh
-  domains:
-    - www.frank.mattmaddex.com
-- type: web
-  env: static
-  repo: https://gitlab.com/mmaddex1/jekyll.git
-  autoDeploy: true
-  name: static
-  buildCommand: ./build.sh
-  staticPublishPath: _site
-  domains: 
-    - static.mattmaddex.com
+#  domains:
+#    - www.frank.mattmaddex.com
+#- type: web
+#  env: static
+#  repo: https://gitlab.com/mmaddex1/jekyll.git
+#  autoDeploy: true
+#  name: static
+#  buildCommand: ./build.sh
+#  staticPublishPath: _site
+#  domains: 
+#    - static.mattmaddex.com
