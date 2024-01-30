@@ -12,6 +12,9 @@ services:
   healthCheckPath: /health
   buildCommand: ./build.sh
   startCommand: ./run.sh
+  envVars:
+  - key: MINIO_ROOT_USER
+    sync: false
 #  domains:
 #    - www.frank.mattmaddex.com
 #- type: web
